@@ -1,7 +1,7 @@
 # CMake模板项目
 ## 使用方式:  
 1. 使用pkg-config,也就是常见的后缀为.pc的配置文件
-- 下载pkg-config-lite（https://sourceforge.net/projects/pkgconfiglite/）
+- 下载pkg-config-lite[https://sourceforge.net/projects/pkgconfiglite]
 - 配置环境变量PKG_CONFIG_EXECUTABLE=xxx/xxx/xxx/pkg-config.exe
 - 在PackagePath.config中加入形如LIB_AVUIIL_PC=H:/Package/ffmpeg7_1/lib/pkgconfig/libavutil.pc的配置行
 - 在cmake中，如下配置
