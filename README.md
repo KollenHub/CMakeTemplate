@@ -8,6 +8,8 @@
 ```cmake
 #这一句放在project之后，两种配置都要使用到的
 include(cmake/package.cmake)
+#打开详细信息
+showconfiginfo()
 find_package_by_pkgconfig(${LIB_AVUTIL_PC} LIBAVUTIL)
 #成功的话可以调用到
 message(STATUS ${LIBAVUTIL_INCLUDE_DIRS})
