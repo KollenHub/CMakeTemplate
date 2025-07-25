@@ -1,4 +1,7 @@
 set(CONFIG_FILE "${CMAKE_SOURCE_DIR}/PackagePath.config")
+if(NOT EXISTS "${CONFIG_FILE}")
+    file(WRITE "${CONFIG_FILE}" "#Qt5_DIR=C:/xxx/xxx/xxx(Include Qt5Config.cmake)")
+endif()
 file(READ "${CONFIG_FILE}" CONFIG_CONTENT)
 
 # 解析配置文件内容
